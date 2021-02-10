@@ -1,10 +1,18 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Hello SumasController!{% endblock %}
-
 {% block body %}
- 
-            {{ dump(buse) }}</td>
+      <table>
+         
+
+            {% for c in copia %}
+                <tr>
+                    {% for ce in c%}
+                        <td>{{ ce }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
             
            
 {% endblock %}
